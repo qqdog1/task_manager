@@ -8,7 +8,7 @@ class TaskSettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Task settings'),
+        title: const Text('任務設定'),
       ),
     );
   }

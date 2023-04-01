@@ -7,7 +7,8 @@ class TaskManager extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Task Manager',
+      debugShowCheckedModeBanner: false,
+      title: '人生好難',
       home: LogoPage(),
     );
   }

@@ -8,7 +8,7 @@ class TotalSummaryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Total summary'),
+        title: const Text('鑑往知來'),
       ),
     );
   }

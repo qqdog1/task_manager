@@ -30,7 +30,7 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daily Summary'),
+        title: const Text('今日進度'),
       ),
       body: dataList.isEmpty
           ? const Center(child: CircularProgressIndicator())
