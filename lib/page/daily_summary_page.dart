@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:task_manager/dto/bar.dart';
 
-class SummaryPage extends StatefulWidget {
-  const SummaryPage({super.key});
+class DailySummaryPage extends StatefulWidget {
+  const DailySummaryPage({super.key});
 
   @override
-  _SummaryPageState createState() => _SummaryPageState();
+  _DailySummaryPageState createState() => _DailySummaryPageState();
 }
 
-class _SummaryPageState extends State<SummaryPage> {
+class _DailySummaryPageState extends State<DailySummaryPage> {
   List<Bar> dataList = [];
 
   @override
