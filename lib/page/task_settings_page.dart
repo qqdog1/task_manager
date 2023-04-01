@@ -6,15 +6,9 @@ class TaskSettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My App'),
-        ),
-        body: Center(
-          child: Text('Hello, World!'),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Task settings'),
       ),
     );
   }

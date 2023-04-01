@@ -34,8 +34,11 @@ class _TabPage extends State<TabPage> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // title: const Text('Daily Summary'),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(0),
+        child: AppBar(
+          elevation: 0,
+        ),
       ),
       body: IndexedStack(
         index: _currentIndex,
