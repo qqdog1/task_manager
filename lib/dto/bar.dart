@@ -11,18 +11,4 @@ class Bar {
   factory Bar.fromJson(dynamic json) {
     return Bar(json['name'], json['total'], json['completed'], json['unit']);
   }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'name': name,
-      'total': total,
-      'completed': completed,
-      'unit': unit,
-    };
-  }
-
-  @override
-  String toString() {
-    return jsonEncode(toJson());
-  }
 }
