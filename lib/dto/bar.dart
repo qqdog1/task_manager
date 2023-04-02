@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class Bar {
   final String name;
   final int total;
@@ -10,8 +12,17 @@ class Bar {
     return Bar(json['name'], json['total'], json['completed'], json['unit']);
   }
 
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'total': total,
+      'completed': completed,
+      'unit': unit,
+    };
+  }
+
   @override
   String toString() {
-    return '{$name, $total, $completed, $unit}';
+    return jsonEncode(toJson());
   }
 }
